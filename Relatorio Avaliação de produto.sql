@@ -1,33 +1,3 @@
-USE stz
-
-select top 10 * from products (nolock)
-where ProductID = '1630219'
-
-select * from categories (nolock)
-where CategoryID = '174'
-
-select * from product_categories (nolock)
-where ProductID = '1339'
-
-select * from catalog_categories (nolock)
-where CategoryID = '174'
-
-select * from category_category_groups (nolock)
-
-
-select * from product_reviews (nolock)
-where email = 'rejanestumpf@yahoo.com.br'
-
-select * from product_review_reactions (nolock)
-
---case status when 'A' then 'Aprovado' end as Status
-
-select * from customers (nolock)
-where email = 'matheusceciliano0911@gmail.com'
-select * from product_rating_attributes (nolock)
-select * from product_rating_average (nolock)
-select * from product_ratings (nolock)
-
 select
 case product_reviews.status 
 	when 'A' then 'Aprovado'
